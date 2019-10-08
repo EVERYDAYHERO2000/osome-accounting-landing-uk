@@ -1,162 +1,91 @@
-.phone {
-  position: -webkit-sticky;
-  position: sticky;
-  right: 0;
-  top: 2vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .promo {
-  height: 93vh;
+  display: flex;
+  align-items: center;
   width: 100%;
-  transform: translateY(50px) scale(.95);
-  transition: transform .6s .2s ease;
-  font-size: 11px; 
-  
-  @media screen and (max-width: 500px) {
-    font-size: 10px;
-  }
-  
-}
-
-.promo svg {
-  height: 100%;
-  width: auto;
-}
-
-.promo svg tspan {
-  font-size: 100%;
-  user-select: none;
-  opacity: .9;
-  letter-spacing: normal;
-  -webkit-font-smoothing: subpixel-antialiased;
-  text-rendering: optimizeLegibility;
-  font-size: 11; 
-  
-  @media screen and (max-width: 500px) {
-    font-size: 10;
-  }
-  
-}
-
-.mobile .phone-mobile {
-  margin: 3rem 0 -2rem;
-}
-
-.promo_visible {
-  transform: translateY(0px) scale(1);
-  transition: transform .6s .2s ease;
-}
-
-.app-rate {
-  transform: translate(110px,-65px);
-  width: 200px;
-}
-
-.mobile .app-rate {
-    margin: -1.5rem 0 1rem;
-    text-align: left;
-    width: 100%;
-    position: static;
-    display: block;
-    transform: none;
-}
-
-.app-rate__stars {
-  color: #ffc435;
-  letter-spacing: 2px;
-}
-
-.app-rate__rew {
-  font-size: 18px;  
-  transform: translate(0,-10px);
-}
-
-.app-rate__rate {
-  font-size: 48px;
-}
-
-.app-rate__description {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.message {
-  transform: translateY(-15px);
-}
-
-.message-show {
-  animation: show-message .6s ease-out alternate forwards;
-}
-
-@keyframes show-message {
-  0% {
-    transform : translateY(-15px);
-  }
-  50% {
-    transform : translateY(10px);
-  }
-  65% {
-    transform : translateY(-5px);
-  }
-  75% {
-    transform : translateY(2px);
-  }
-  100% {
-    transform : translateY(0);
-  }
-}
-
-#cover_3 {
-  width: 880px;
-  height: 570px;
-  background-image: url(../../assets/img/screens.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: all .5s .3s ease;
-  transform-origin: center;
-  transform: translateY(30px) scale(.9);
-  
-  @media screen and (max-width: 500px) {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 2rem; 
-    transform: translateY(30px) scale(1.1);
-  }
-
-}
-
-.webp #cover_3 {
-  background-image: url(../../assets/img/screens.webp);
-}
-
-#cover_3.cover_3_visible {
-  transform: translateY(0px) scale(1);
-  transition: all .5s .3s ease;
-}
-
-.mobile .main-header { 
-  text-align:center;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-
-.mobile .main-header .header-inner {
-  transform:translate(0, -10px);
-}
-
-.mobile h1 {
-  font-weight: 700;
-}
-
-.mobile .logo-container {
-  display: flex;
-  justify-content: center;
   box-sizing: border-box;
-  padding-left: 21px;
+  height: 60vh;
+  max-height: 470px;
+  
 }
+
+.promo_main {
+  background: url(../../assets/img/cover.png);
+  background-position: 100% 105%;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  margin: 0 0 120px 0;
+}
+
+.promo_blue {
+  background: url(../../assets/img/screen.png);
+  background-position: 100% 5%;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  margin: 0 0 80px 0;
+}
+
+.promo__content {
+
+}
+
+.promo__content p {
+  line-height: 30px;
+
+}
+
+.promo_blue h2 {
+  color: #fff;
+}
+
+.promo_blue .promo__content ul {
+  width: 40%;
+  font-size: 16px;
+  line-height: 25px;
+  list-style: none;
+  counter-reset: section;
+  margin: 0;
+  padding: 0;
+}
+
+.promo_blue .promo__content ul li {
+  margin: 20px 0;  
+  display: flex;
+}
+
+.promo_blue .promo__content ul li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  min-height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  border: solid 1.5px rgba(255,255,255,.95);
+  color: #fff; 
+  margin-right: 20px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding-top: 3px;
+}
+
+.promo_footer {
+  background: url(../../assets/img/cover.png);
+  background-position: 16% 105%;
+  background-repeat: no-repeat;
+  background-size: 45% auto;
+  margin: 0px 0 40px;
+  height: 370px;
+}
+
+.promo_footer .promo__content {
+  width: 40%;
+  margin-left: 60%;  
+  text-align: center;
+}
+
+

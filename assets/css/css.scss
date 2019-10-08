@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+@font-face {
+  font-family: 'Graphic';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/GraphikLC-Medium-Web.woff2') format('woff2');
+}
+
+body {
+  padding:0;
+  margin:0;
+  font-family: Graphic, sans-serif;
+  font-size: 20px;
+  background-color: #eef5fb;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(26, 93, 200);
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  line-height: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+

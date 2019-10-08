@@ -1,0 +1,39 @@
+.section {
+  margin: 40px 0;
+}
+
+.section__header {
+  text-align: center;
+}
+
+.section_blue {
+  background: rgb(26, 93, 200);
+  color: #fff;
+}
+
+.arrow-down {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  transform: rotate(-45deg);
+  border-bottom: 2px solid rgb(26, 93, 200);
+  border-left: 2px solid rgb(26, 93, 200);
+  opacity: 1;
+  transition: all .2s;
+}
+
+.arrow-down:before {
+  content: 'Learn more';
+  display: inline-block;
+  transform: rotate(45deg) translate(-38px, 12px);
+  text-align: center;
+  width: 100px;
+  color: rgb(26, 93, 200);
+  font-size: 14px;
+  
+}
+
+.arrow-down_hidden {
+  opacity: 0;
+  transition: all .2s;
+}

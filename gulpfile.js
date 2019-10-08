@@ -31,7 +31,7 @@ gulp.task('sass', function () {
     .pipe(concat('main.css'))
     .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(DEV_PATH + '/dist/css/'));
+    .pipe(gulp.dest(DEV_PATH + '/source/css/'));
     
   
 });
@@ -55,7 +55,7 @@ gulp.task('js', function () {
     .pipe(replace(/\\n+/g, ''))
     .pipe(replace(/\s+/g, ' '))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(DEV_PATH + '/dist/js/'));
+    .pipe(gulp.dest(DEV_PATH + '/source/js/'));
   
 });
 

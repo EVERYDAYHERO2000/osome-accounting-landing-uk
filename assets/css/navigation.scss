@@ -1,0 +1,27 @@
+.navigation {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+.navigation__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__links > a {
+  padding: 12px;
+  color: rgb(26,93,200);
+  cursor: pointer;
+  
+}
+
+.navigation__btn {
+  margin-left: 12px;
+  transition: all .2s;
+  opacity: 1;
+}
+
+.navigation__btn_hidden {
+  opacity: 0;
+}

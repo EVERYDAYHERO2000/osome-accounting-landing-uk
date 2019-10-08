@@ -1,103 +1,41 @@
 .btn {
-  background-color: #ef5d8f;
-  display: inline-block;
+  background: rgba(239,93,142, 1);
   color: #fff;
+  transition: all .3s;
+  padding: 12px 18px;
+  display: inline-block;
   box-sizing: border-box;
-  padding: .8rem 1.4rem .8rem 3rem;
-  border-radius: 8px;
-  text-decoration: none;
   cursor: pointer;
-  transition: all .2s .3s;
-  transform: translateY(0rem);
-  position: relative;
-  opacity: 1;
-  word-break: keep-all;
-  box-shadow: rgba(41, 120, 253, 0) 0px 0px 0px 0px;
-  transition: all .2s .1s;
-  word-break: keep-all;
-  white-space: nowrap; 
-  
-  @media screen and (max-width: 500px) {
-    width: calc(100vw - 2rem);
-    padding: .8rem 1rem .8rem 1rem;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 .btn:hover {
-  box-shadow: rgba(219, 73, 185, 0.3) 0px 10px 30px 0px;
-  transition: all .2s .1s
+  background: rgba(239,93,142, 0.8);
+  transition: all .3s;
 }
 
-.btn:before {
-  content:'';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top:0;
-  left: 0;
-  background-image: url(../../assets/img/message.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translate(18px, 20px);
-  
-  @media screen and (max-width: 500px) {
-    width: 16px;
-    height: 16px;
-    transform: translate(18px, 17px);
-    display:none;
-  }
-  
+.btn_m {
+  padding: 18px 20px;
+  font-size: 20px;
 }
 
 .btn-group {
-  margin-top: 4rem;
-  @media screen and (max-width: 500px) {
-    margin-top: 2rem;
-    min-height: 48px;
-  }
+  margin-top: 40px 
+}
+.btn_line {
+  background: transparent;
+  color: rgb(26, 93, 200);
+  border: 1px solid rgb(26, 93, 200);
 }
 
+.btn_line:hover {
+  background: rgb(26, 93, 200);
+  color: #fff;
+} 
 
-.mobile .s-screens .btn-group {
-  margin: 0;
-}
-
-.btn_hidden {
-  opacity: 0;
-  transform: translateY(2rem);
-  transition: all .2s .3s;
-}
-
-.btn_hidden-cut {
-  visibility: hidden;
-  transition: none;
-}
-
-.btn_visible-cut {
-  visibility:visible;
-  transition: none;
-}
-
-.btn_fixed {
-  position: fixed;
-  bottom: 50px;
-  z-index: 10000;
-  box-shadow: rgba(45, 74, 123, 0.75) 0px 10px 30px 0px;
-  
-  @media screen and (max-width: 500px) {
-    //width: calc(100vw - 2rem);
-  }
-  
-}
-
-#pos_3 {
-  transition: all .2s;
-}
-
-#pos_3_contain_1 {
-  min-height: 60px;
+.btn_dubble-width {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 10px;
 }

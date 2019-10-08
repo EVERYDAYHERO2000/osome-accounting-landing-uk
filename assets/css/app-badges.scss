@@ -1,0 +1,24 @@
+.app-badges  {
+  
+}
+.app-badges a {
+    margin: 0 0 20px;
+    border-radius: 50px;
+    display: block;
+    width: 180px;
+    height: 60px;
+    background-size: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-color: hsla(0,0%,100%,0);
+    background-color: #000;
+}
+
+.app-badges__google {
+    background-image: url(../../assets/img/google-play.svg);
+}
+
+.app-badges__apple {
+    background-image: url(../../assets/img/app-store.svg);
+}
