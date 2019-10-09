@@ -27,6 +27,7 @@
     @media screen and (max-width: 500px) {
         width: 100%;
         background-size: 60%;
+        background-position: 50% -3px;
     }
   
 }
@@ -37,4 +38,21 @@
 
 .app-badges__apple {
     background-image: url(../../assets/img/app-store.svg);
+}
+
+.mobile.iPad a[class*='_google'],
+.mobile.iPhone a[class*='_google'],
+.mobile.iPod a[class*='_google'],
+.mobile.ipad a[class*='_google'],
+.mobile.iphone a[class*='_google'],
+.mobile.safari a[class*='_google'] {
+  display: none;
+}
+
+.mobile.Android a[class*='_apple'],
+.mobile.Linux a[class*='_apple'],
+.mobile.android a[class*='_apple'],
+.mobile.linux a[class*='_apple'],
+  {
+  display: none;
 }
