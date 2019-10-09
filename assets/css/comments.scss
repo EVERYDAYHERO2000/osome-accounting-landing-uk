@@ -4,6 +4,11 @@
   box-sizing: border-box;
   padding: 30px 10%;
   
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
+  
+  
 }
 
 .comments p {
@@ -11,4 +16,9 @@
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   color: rgb(26, 93, 200);
+  
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

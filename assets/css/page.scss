@@ -1,16 +1,23 @@
 .page {
-
+  @media screen and (max-width: 500px) {
+    width: 100vw;  
+  }
 }
 
 .page__outer {
   display: flex;
   justify-content: center;
+  padding: 0 12px;
 }
 
 .page__inner {
   width: 1024px;
   box-sizing: border-box;
   padding: 0 12px;
+  
+  @media screen and (max-width: 500px) {
+    width: 100%;  
+  }
 }
 
 .page_blue {

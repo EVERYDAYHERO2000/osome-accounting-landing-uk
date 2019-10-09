@@ -6,6 +6,10 @@
   height: 60vh;
   max-height: 470px;
   
+  @media screen and (max-width: 500px) {
+    
+  }
+  
 }
 
 .promo_main {
@@ -14,6 +18,24 @@
   background-repeat: no-repeat;
   background-size: 50% auto;
   margin: 0 0 120px 0;
+  box-sizing: border-box;
+  
+  @media screen and (max-width: 500px) {
+    padding:80px 0 0 0;
+    background-position: 50% 75%;
+    max-height: none;
+    height: 85vh;
+    margin: 0!important;
+  }
+  
+  @media screen and (max-width: 500px) and (min-height: 600px) {
+    background-size: 70%;
+  }
+  
+  @media screen and (max-width: 500px) and (min-height: 750px) {
+    background-size: 90%;
+  }
+  
 }
 
 .promo_blue {
@@ -22,19 +44,54 @@
   background-repeat: no-repeat;
   background-size: 60% auto;
   margin: 0 0 80px 0;
+  
+  @media screen and (max-width: 500px) {
+    margin: 30px 0 40px!important;
+    background-position: bottom;
+    height: 690px;
+    max-height: none;
+    display: block;
+    background-size: contain;
+  }
+  
+  
 }
 
 .promo__content {
+  
+  @media screen and (max-width: 500px) {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+  }
 
 }
 
 .promo__content p {
   line-height: 30px;
+  
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+    line-height: 25px;
+  }
 
 }
 
 .promo_blue h2 {
   color: #fff;
+  
+  @media screen and (max-width: 500px) {
+    text-align: left;  
+  }
+}
+
+.promo_blue .promo__content {
+  @media screen and (max-width: 500px) {
+    height: auto;  
+  }
 }
 
 .promo_blue .promo__content ul {
@@ -45,11 +102,20 @@
   counter-reset: section;
   margin: 0;
   padding: 0;
+  
+  @media screen and (max-width: 500px) {
+    
+    width: 100%;
+    text-align: left;
+    
+  }
+  
 }
 
 .promo_blue .promo__content ul li {
   margin: 20px 0;  
   display: flex;
+  
 }
 
 .promo_blue .promo__content ul li::before {
@@ -80,12 +146,26 @@
   background-size: 45% auto;
   margin: 0px 0 40px;
   height: 370px;
+  
+  @media screen and (max-width: 500px) {
+    background-position: 50% 63%;
+    background-size: 70% auto;
+    height: 400px;
+    margin: 40px 0;
+  }
+  
 }
 
 .promo_footer .promo__content {
   width: 40%;
   margin-left: 60%;  
   text-align: center;
+  
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    margin: 0;
+  }
+  
 }
 
 

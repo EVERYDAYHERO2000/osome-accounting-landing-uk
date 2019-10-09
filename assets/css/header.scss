@@ -7,6 +7,11 @@
   box-sizing: border-box;
   height: 80px;
   max-height: 80px;
+  
+  @media screen and (max-width: 500px) {
+    position: absolute;  
+  }
+  
 }
 
 .header_top {
@@ -28,11 +33,23 @@
   width: 100%;
   padding: 0 20px;
   align-items: center;
+  
+  @media screen and (max-width: 500px) {
+    justify-content: center;  
+  }
+  
 }
 
 .header-logo {
   width: 129px;
   height: 40px;
+  
+  @media screen and (max-width: 500px) {
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+  }
+  
 }
 
 .header-navigation {

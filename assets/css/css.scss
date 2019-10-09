@@ -17,6 +17,13 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   line-height: 25px;
+  text-size-adjust: auto;
+  
+  @media screen and (max-width: 500px) {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
 }
 
 h1, h2, h3, h4, h5, {
@@ -28,12 +35,25 @@ h1 {
   font-size: 50px;
   line-height: 60px;
   font-weight: 700;
+  
+  @media screen and (max-width: 500px) {
+    line-height: 35px;
+    font-size: 25px;
+  }
+  
+  
 }
 
 h2 {
   line-height: 50px;
   font-size: 40px;
   font-weight: 700;
+  
+  @media screen and (max-width: 500px) {
+    line-height: 35px;
+    font-size: 25px;
+  }
+  
 }
 
 h3 {
@@ -41,6 +61,12 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   margin: 10px 0 20px;
+  
+  @media screen and (max-width: 500px) {
+    line-height: 35px;
+    font-size: 25px;
+  }
+  
 }
 
 a {
@@ -48,3 +74,13 @@ a {
   cursor: pointer;
 }
 
+
+.text-max-wight {
+  font-size: 16px;
+  padding: 0 290px;
+  
+  @media screen and (max-width: 500px) {
+    padding: 0;  
+  }
+  
+}
