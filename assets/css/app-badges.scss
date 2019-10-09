@@ -45,7 +45,9 @@
 .mobile.iPod a[class*='_google'],
 .mobile.ipad a[class*='_google'],
 .mobile.iphone a[class*='_google'],
-.mobile.safari a[class*='_google'] {
+.mobile.safari a[class*='_google'],
+.mobile.macintel a[class*='_google']
+{
   display: none;
 }
 
