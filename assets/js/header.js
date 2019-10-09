@@ -28,6 +28,16 @@ $(function(){
     
   }
   
-  
+  $('.navigation__links a').click(function(e){
+    e.preventDefault();
+    
+    var $target = $( $(this).attr('href') ); 
+    var offset = 100;
+    
+    $('html, body').animate({
+        scrollTop: $target.offset().top - offset
+    }, 500);
+    
+  })
   
 });
