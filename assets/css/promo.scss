@@ -50,8 +50,9 @@
   
   @media screen and (max-width: 500px) {
     margin: 30px 0 40px!important;
+    background: none;
     background-position: bottom;
-    height: 690px;
+    height: auto;
     max-height: none;
     display: block;
     background-size: contain;
