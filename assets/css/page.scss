@@ -23,6 +23,11 @@
 .page_blue {
   background: rgb(26, 93, 200);
   color: #fff;
+
+  
+  @media screen and (max-width: 500px) {
+
+  }
 }
 
 .page_white {

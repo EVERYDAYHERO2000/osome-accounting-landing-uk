@@ -1,9 +1,9 @@
-$('.btn').click(function () {
+$('.btn, .app-badges a').click(function () {
 		var event_type = $(this).data('ga');
 		var event_name = $(this).data('ga-name');
     var event_title = $(this).text();
     var event_to_url = $(this).attr('href');
-    
+  
 		if (event_type) {
 			var event = {
 				event: event_type,
